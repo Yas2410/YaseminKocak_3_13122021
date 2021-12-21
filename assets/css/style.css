@@ -5,6 +5,7 @@
 }
 
 h,
+h3,
 p {
   margin: 0;
 }
@@ -99,6 +100,7 @@ header h1 {
 }
 
 .step {
+  position: relative;
   display: flex;
   align-items: center;
   background-color: #eceff3;
@@ -113,7 +115,7 @@ header h1 {
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 30px;
+  left: -10px;
   width: 20px;
   height: 20px;
   border-radius: 10px;
@@ -228,4 +230,72 @@ footer li {
 .fa-hands-helping {
   font-size: 12px !important;
   padding-right: 4px !important;
+}
+
+/***EACH MENU STYLE***/
+.backMain {
+  display: flex;
+  align-items: center;
+}
+
+.menuFood {
+  background-image: url("../img/aLaFrancaise.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.fa-arrow-left {
+  font-size: 20px;
+  padding: 0 50px 0 25px;
+}
+
+.menuDetails {
+  background-color: #eceff3;
+  width: 100%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 15px;
+}
+
+.restoName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-heart {
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.menuSection {
+  font-weight: 400;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #99e2d0;
+  width: 55px;
+}
+
+.menuInfo {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 1px 6px rgb(221, 221, 221);
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.menuInfo h3,
+.menuInfo div {
+  padding: 3px;
+  font-size: 16px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price span {
+  font-size: 14px;
 }
