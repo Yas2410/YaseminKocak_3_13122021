@@ -14,27 +14,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/mobile.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/tablet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <title>Ohmyfood! Bienvenue sur le menu du restaurant "À la Française"!</title>
+    <title>Ohmyfood! Bienvenue sur le menu du restaurant "À la française"!</title>
 </head>
 
 <body>
 
     <header>
         <div class="backMain">
-            <i class="fas fa-arrow-left"></i>
+            <a href="../OhMyFoodProject/index.html">
+                <i class="fas fa-arrow-left"></i>
+            </a>
             <h1>Ohmyfood</h1>
         </div>
     </header>
 
     <main>
         <section>
-            <div class="menuFood">
+            <div class="restoPicture">
+                <img src="assets/img/aLaFrancaise.jpg" alt="Photo d'un plat du restaurant À la Française">
             </div>
-            <div class="menuDetails">
+            <div class="menuFood">
                 <div class="restoName">
                     <h1>À la française</h1>
                     <i class="far fa-heart"></i>
@@ -42,80 +43,72 @@
                 <h2 class="menuSection">ENTRÉES</h2>
                 <div class="menuInfo">
                     <h3>Tartare de poulpe acidulé</h3>
-                    <div class="price">
+                    <div class="menuDetails">
                         <span>Aux zests d'orange</span>
-                        <span><strong>25€</strong></span>
+                        <span class="price">25€</span>
                     </div>
                 </div>
                 <div class="menuInfo">
                     <h3>Velouté de légumes d'Antan</h3>
-                    <div class="price">
+                    <div class="menuDetails">
                         <span>Carotte, panais, topinambour</span>
-                        <span><strong>35€</strong></span>
+                        <span class="price">35€</span>
                     </div>
                 </div>
-                <div class="menuInfo">
+                <div class="menuInfo menuLast">
                     <h3>Soupe à l'oignon</h3>
-                    <div class="price">
+                    <div class="menuDetails">
                         <span>Revisitée</span>
-                        <span><strong>20€</strong></span>
+                        <span class="price">20€</span>
                     </div>
                 </div>
                 <h2 class="menuSection">PLATS</h2>
                 <div class="menuInfo">
                     <h3>Coquilles Saint-Jacques</h3>
-                    <div class="price">
+                    <div class="menuDetails">
                         <span>Accompagnées d'une purée de panais</span>
-                        <span><strong>40€</strong></span>
+                        <span class="price">40€</span>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <h3>Magret de canard</h3>
-                        <span>Et parmentier de pommes de terres</span>
-                    </div>
-                    <div>
-                        <span>35€</span>
+                <div class="menuInfo">
+                    <h3>Magret de canard</h3>
+                    <div class="menuDetails">
+                        <span>Et parmentier de pommes de terre</span>
+                        <span class="price">35€</span>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                <div class="menuInfo menuLast">
+                    <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                    <div class="menuDetails">
                         <span>Sur son lit de gnocchis aux légumes</span>
-                    </div>
-                    <div>
-                        <span>44€</span>
+                        <span class="price">44€</span>
                     </div>
                 </div>
                 <h2 class="menuSection">DESSERTS</h2>
-                <div>
-                    <div>
-                        <h3>Pétales de violettes glacés</h3>
+                <div class="menuInfo">
+                    <h3>Pétales de violettes glacés</h3>
+                    <div class="menuDetails">
                         <span>Et purée de noisettes</span>
-                    </div>
-                    <div>
-                        <span>18€</span>
+                        <span class="price">18€</span>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <h3>Fondant au chocolat</h3>
+                <div class="menuInfo">
+                    <h3>Fondant au chocolat</h3>
+                    <div class="menuDetails">
                         <span>Revisité</span>
-                    </div>
-                    <div>
-                        <span>22€</span>
+                        <span class="price">22€</span>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <h3>Millefeuille croustillant</h3>
-                        <span>Myrtilles en pâte d'amande</span>
-                    </div>
-                    <div>
-                        <span>23€</span>
+                <div class="menuInfo menuLast">
+                    <h3>Millefeuille croustillant</h3>
+                    <div class="menuDetails">
+                        <span>Myrtilles et pâte d'amande</span>
+                        <span class="price">23€</span>
                     </div>
                 </div>
-                <button>Commander</button>
+                <div class="order">
+                    <button class="orderBtn">Commander</button>
+                </div>
             </div>
         </section>
     </main>
@@ -134,9 +127,9 @@
             <li>
                 Mentions légales
             </li>
-            <li>
+            <a href="mailto:contact@ohmyfood.com">
                 Contact
-            </li>
+            </a>
         </ul>
     </footer>
 

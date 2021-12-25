@@ -62,15 +62,17 @@ header h1 {
 .explore p {
   padding-bottom: 20px;
   font-weight: 300;
+  font-size: 18px;
 }
 
-.exploreButton {
+.exploreBtn,
+.orderBtn {
   cursor: pointer;
   padding: 15px 20px;
   margin-bottom: 20px;
   border-radius: 100px;
   border: none;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   background-image: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 1px 6px rgb(129, 129, 129);
@@ -81,7 +83,7 @@ header h1 {
 .restaurants {
   display: flex;
   flex-direction: column;
-  padding: 20px 25px;
+  padding: 40px 25px;
 }
 
 .running h2,
@@ -96,7 +98,7 @@ header h1 {
 
 .step span {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .step {
@@ -203,15 +205,15 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15px 0;
+  padding: 25px 0;
   background-color: #313135;
   color: white;
 }
 
 footer h4 {
   margin: 0;
-  padding: 5px 35px;
-  font-size: 18px;
+  padding: 5px 40px;
+  font-size: 20px;
 }
 
 footer i {
@@ -224,7 +226,7 @@ footer ul {
 }
 footer li {
   padding: 5px 0;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .fa-hands-helping {
@@ -238,11 +240,13 @@ footer li {
   align-items: center;
 }
 
-.menuFood {
-  background-image: url("../img/aLaFrancaise.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 300px;
+.restoPicture img {
+  width: 100%;
+}
+
+.restoPicture {
+  object-fit: cover;
+  position: relative;
 }
 
 .fa-arrow-left {
@@ -250,12 +254,14 @@ footer li {
   padding: 0 50px 0 25px;
 }
 
-.menuDetails {
+.menuFood {
   background-color: #eceff3;
   width: 100%;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   padding: 15px;
+  position: relative;
+  margin-top: -55px;
 }
 
 .restoName {
@@ -290,12 +296,35 @@ footer li {
   font-size: 16px;
 }
 
-.price {
+.menuLast {
+  margin-bottom: 40px;
+}
+
+.menuDetails {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.price span {
+.price {
   font-size: 14px;
+  font-weight: bold;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+}
+
+.orderBtn {
+  margin-bottom: 50px;
+  width: 155px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  border-bottom: 2px solid #ff79da;
 }
