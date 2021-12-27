@@ -67,7 +67,6 @@ header h1 {
 
 .exploreBtn,
 .orderBtn {
-  cursor: pointer;
   padding: 15px 20px;
   margin-bottom: 20px;
   border-radius: 100px;
@@ -76,6 +75,7 @@ header h1 {
   color: white;
   background-image: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 1px 6px rgb(129, 129, 129);
+  transition: all 0.3s ease-in-out;
 }
 
 /***SECOND SECTION STYLE***/
@@ -328,3 +328,114 @@ footer a {
 footer a:hover {
   border-bottom: 2px solid #ff79da;
 }
+
+/***TEST ANIMATIONS***/
+/***
+HEART START
+***/
+.exploreBtn:hover,
+.orderBtn:hover {
+  filter: brightness(110%);
+  box-shadow: 0px 2px 8px rgb(54, 54, 54);
+}
+
+.likeOne,
+.likeTwo {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+.likeTwo {
+  opacity: 0;
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.8s linear;
+}
+
+.likeTwo:hover {
+  opacity: 1;
+}
+/***
+HEART START
+***/
+
+/***LOADING SPINNER 
+START***/
+.loader h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 70px;
+  color: #4e4e52;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  background-color: #fff;
+  inset: 0;
+  z-index: 1;
+  animation: disappear 5ms 3s forwards;
+  transform-origin: top;
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.pulse {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30rem;
+}
+.pulse circle {
+  fill: #9356dc;
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: 50% 50%;
+  -webkit-animation: pulse 2.5s cubic-bezier(0.5, 0.5, 0, 1);
+  animation: pulse 2.5s cubic-bezier(0.5, 0.5, 0, 1);
+}
+.pulse circle:nth-child(2) {
+  fill: #ff79da;
+  -webkit-animation: pulse 2.5s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+  animation: pulse 2.5s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+}
+.pulse circle:nth-child(3) {
+  fill: #99e2d0;
+  -webkit-animation: pulse 2.5s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+  animation: pulse 2.5s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+}
+
+@-webkit-keyframes pulse {
+  25% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/***LOADING SPINNER 
+END***/
