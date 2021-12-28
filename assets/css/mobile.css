@@ -110,6 +110,16 @@ header h1 {
   padding: 25px 0;
   margin-bottom: 15px;
   box-shadow: 0px 1px 6px rgb(221, 221, 221);
+  transition: all 0.5s ease-in-out;
+}
+
+.step:hover {
+  cursor: pointer;
+  background-color: #f0e6fc;
+}
+
+.step:hover i {
+  color: #9356dc;
 }
 
 .number {
@@ -129,10 +139,6 @@ header h1 {
 .running i {
   padding: 0 25px;
   color: grey;
-}
-
-.fa-store {
-  color: #9356dc !important;
 }
 
 /***THIRD SECTION STYLE***/
@@ -326,19 +332,20 @@ footer a {
 }
 
 footer a:hover {
-  border-bottom: 2px solid #ff79da;
+  border-bottom: 2px solid #9356dc;
 }
 
 /***TEST ANIMATIONS***/
-/***
-HEART START
-***/
+
 .exploreBtn:hover,
 .orderBtn:hover {
   filter: brightness(110%);
   box-shadow: 0px 2px 8px rgb(54, 54, 54);
 }
 
+/***
+HEART START
+***/
 .likeOne,
 .likeTwo {
   position: absolute;

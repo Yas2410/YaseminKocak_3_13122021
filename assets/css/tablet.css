@@ -1,0 +1,54 @@
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .running {
+    margin: 0 15px;
+    text-align: center;
+  }
+
+  .threeSteps {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0px 5px 8px rgb(221, 221, 221);
+    padding: 25px 10px;
+    margin: 10px;
+  }
+
+  .step i {
+    padding: 0 15px;
+  }
+
+  .step span {
+    font-size: 12px;
+  }
+
+  .number {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
+
+  .restaurants h2 {
+    text-align: center;
+  }
+
+  .card {
+    margin: 20px 55px;
+  }
+
+  .footerDesk {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footerDesk li {
+    padding: 0 10px;
+  }
+}
