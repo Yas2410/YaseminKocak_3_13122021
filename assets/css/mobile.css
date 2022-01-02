@@ -276,6 +276,11 @@ footer li {
   align-items: center;
 }
 
+.restoName h2 {
+  font-family: "Shrikhand", cursive;
+  padding-bottom: 25px;
+}
+
 .fa-heart {
   font-size: 26px;
   margin-right: 10px;
@@ -386,7 +391,7 @@ START***/
   background-color: #fff;
   inset: 0;
   z-index: 1;
-  animation: disappear 5ms 3s forwards;
+  animation: disappear 1ms 3s forwards;
   transform-origin: top;
 }
 
@@ -446,3 +451,126 @@ START***/
 
 /***LOADING SPINNER 
 END***/
+
+/***FADE IN***/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, -15%, 0);
+  }
+}
+
+.appearFirst {
+  animation: fadeIn 1s ease-in both;
+}
+.appearSecond {
+  animation: fadeIn 3s ease-in both;
+}
+.appearThird {
+  animation: fadeIn 4s ease-in both;
+}
+/***FADE IN***/
+
+.menuInfo {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+}
+
+.checkbox {
+  position: absolute;
+  background-color: #99e2d0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 65px;
+  transform-origin: right 50%;
+  border-radius: 0px 15px 15px 0px;
+  transform: translateX(65px);
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+
+.fa-check-circle {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 25px;
+  color: white;
+  opacity: 1;
+}
+
+.menuInfo:hover .checkbox {
+  transform: translateX(0px);
+  transition: 0.5s ease-in-out;
+}
+
+.menuInfo:hover .menuDetails,
+.menuInfo:hover .menuTitle {
+  width: calc(100% - 65px);
+  transition: width 0.5s ease-in-out;
+}
+
+.menuDetails {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  transform-origin: left 50%;
+}
+
+.menuDetails p,
+.menuTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/***CHECKBOX
+.menuInfo {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  background-color: #99e2d0;
+  transition: margin-right 300ms ease-in-out;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  right: 0;
+  top: 56px;
+  height: 65px;
+  opacity: 0;
+}
+
+.fa-check-circle {
+  color: #fff;
+  font-size: 25px;
+}
+
+.menuInfo:hover .checkbox {
+  opacity: 1;
+}
+
+
+.fa-check-circle {
+  font-size: 25px;
+  transition: transform 500ms ease-in-out;
+  will-change: transform;
+  transform: rotate(-180deg);
+}
+
+.fa-check-circle:hover {
+  transform: rotate(0);
+}
+***/
