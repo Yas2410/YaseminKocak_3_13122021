@@ -128,11 +128,49 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
   }
 
-  .menuDetails {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  .fa-arrow-left {
+    font-size: 30px;
+    color: #9356dc;
+    transition: transform 0.5s;
+  }
+
+  .fa-arrow-left:hover {
+    transform: scale(1.2);
+    color: #ff79da;
+  }
+
+  .restoPicture img {
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .menuFood {
+    margin-top: -5px;
+    padding: 0;
+    border-radius: unset;
+    border-top: solid 6px #9356dc;
+  }
+
+  .menuDesktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .menuInfo {
+    width: 335px;
+  }
+
+  .restoName h2 {
+    padding: 25px;
+    font-size: 35px;
+  }
+
+  .restoName i {
+    font-size: 35px;
   }
 }

@@ -1,4 +1,9 @@
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .backMain {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
   .running {
     margin: 0 15px;
     text-align: center;
@@ -50,5 +55,16 @@
 
   .footerDesk li {
     padding: 0 10px;
+  }
+
+  .restoName {
+    display: flex;
+  }
+
+  .appearFirst,
+  .appearSecond,
+  .appearThird {
+    width: 70%;
+    margin-left: 140px;
   }
 }
