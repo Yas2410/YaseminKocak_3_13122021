@@ -370,11 +370,12 @@ HEART START
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.8s linear;
+  transition: all 0.5s linear;
 }
 
 .likeTwo:hover {
   opacity: 1;
+  transform: scale(1.1);
 }
 /***
 HEART START
