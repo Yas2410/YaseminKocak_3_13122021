@@ -24,8 +24,9 @@
   }
 
   .explore {
-    background-image: url(../img/welcomePage.jpg);
+    background-image: url(../img/welcomePage2.jpg);
     background-size: cover;
+    object-position: bottom;
     width: 100%;
     display: block;
     justify-content: center;
@@ -172,5 +173,9 @@
 
   .restoName i {
     font-size: 35px;
+  }
+
+  .loader h1 {
+    font-size: 70px;
   }
 }

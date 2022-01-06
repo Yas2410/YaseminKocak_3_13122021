@@ -155,10 +155,8 @@ header h1 {
   margin-bottom: 20px;
   height: 240px;
   box-shadow: 0px 1px 6px rgb(221, 221, 221);
-  transition: transform 300ms ease-in-out;
 }
 
-.card:hover,
 .step:hover {
   transform: scale(1.03);
 }
@@ -359,13 +357,22 @@ footer a:hover {
 HEART START
 ***/
 .likeOne,
-.likeTwo {
+.likeTwo,
+.likeOneMenu,
+.likeTwoMenu {
   position: absolute;
   right: 15px;
+  bottom: 20px;
   cursor: pointer;
 }
 
-.likeTwo {
+.likeOneMenu,
+.likeTwoMenu {
+  bottom: unset;
+}
+
+.likeTwo,
+.likeTwoMenu {
   opacity: 0;
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
@@ -373,7 +380,8 @@ HEART START
   transition: all 0.5s linear;
 }
 
-.likeTwo:hover {
+.likeTwo:hover,
+.likeTwoMenu:hover {
   opacity: 1;
   transform: scale(1.1);
 }
@@ -385,7 +393,7 @@ HEART START
 START***/
 .loader h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 70px;
+  font-size: 55px;
   color: #4e4e52;
 }
 
@@ -399,7 +407,7 @@ START***/
   background-color: #fff;
   inset: 0;
   z-index: 1;
-  animation: disappear 1ms 3s forwards;
+  animation: disappear 1ms 2.2s forwards;
   transform-origin: top;
 }
 
@@ -418,25 +426,25 @@ START***/
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 30rem;
+  max-width: 500px;
 }
 .pulse circle {
   fill: #9356dc;
   transform: scale(0);
   opacity: 0;
   transform-origin: 50% 50%;
-  -webkit-animation: pulse 2.5s cubic-bezier(0.5, 0.5, 0, 1);
-  animation: pulse 2.5s cubic-bezier(0.5, 0.5, 0, 1);
+  -webkit-animation: pulse 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+  animation: pulse 1.5s cubic-bezier(0.5, 0.5, 0, 1);
 }
 .pulse circle:nth-child(2) {
   fill: #ff79da;
-  -webkit-animation: pulse 2.5s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
-  animation: pulse 2.5s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+  -webkit-animation: pulse 1.5s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+  animation: pulse 1.5s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
 }
 .pulse circle:nth-child(3) {
   fill: #99e2d0;
-  -webkit-animation: pulse 2.5s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
-  animation: pulse 2.5s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+  -webkit-animation: pulse 1.5s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+  animation: pulse 1.5s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
 }
 
 @-webkit-keyframes pulse {
@@ -476,10 +484,10 @@ END***/
   animation: fadeIn 1s ease-in both;
 }
 .appearSecond {
-  animation: fadeIn 3s ease-in both;
+  animation: fadeIn 1.5s ease-in both;
 }
 .appearThird {
-  animation: fadeIn 4s ease-in both;
+  animation: fadeIn 2s ease-in both;
 }
 /***FADE IN***/
 
@@ -543,48 +551,3 @@ END***/
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-/***CHECKBOX
-.menuInfo {
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 65px;
-  background-color: #99e2d0;
-  transition: margin-right 300ms ease-in-out;
-  color: white;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  position: absolute;
-  right: 0;
-  top: 56px;
-  height: 65px;
-  opacity: 0;
-}
-
-.fa-check-circle {
-  color: #fff;
-  font-size: 25px;
-}
-
-.menuInfo:hover .checkbox {
-  opacity: 1;
-}
-
-
-.fa-check-circle {
-  font-size: 25px;
-  transition: transform 500ms ease-in-out;
-  will-change: transform;
-  transform: rotate(-180deg);
-}
-
-.fa-check-circle:hover {
-  transform: rotate(0);
-}
-***/
