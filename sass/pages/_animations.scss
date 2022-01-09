@@ -14,7 +14,7 @@
   h1 {
     font-family: "Shrikhand", cursive;
     font-size: 55px;
-    color: #4e4e52;
+    color: $loader-title;
     @include desktop {
       font-size: 70px;
     }

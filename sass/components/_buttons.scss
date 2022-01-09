@@ -7,12 +7,12 @@
   font-size: 16px;
   color: white;
   background-image: linear-gradient($colour-secondary, $colour-primary);
-  box-shadow: 0px 1px 6px rgb(129, 129, 129);
+  @include main-shadow(#818181);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   &:hover {
     filter: brightness(110%);
-    box-shadow: 0px 2px 8px rgb(54, 54, 54);
+    @include main-shadow-hover;
   }
 }
 
@@ -44,7 +44,7 @@
 .card__like--full,
 .menu__like--full {
   opacity: 0;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient($colour-secondary, $colour-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.5s linear;

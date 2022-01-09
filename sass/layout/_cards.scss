@@ -4,7 +4,7 @@
   border-radius: 15px;
   margin-bottom: 20px;
   height: 240px;
-  box-shadow: 0px 1px 6px rgb(221, 221, 221);
+  @include main-shadow(#dddddd);
   img {
     box-sizing: border-box;
     width: 100%;

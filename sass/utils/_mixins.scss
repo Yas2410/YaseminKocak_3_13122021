@@ -9,3 +9,19 @@
     @content;
   }
 }
+
+@mixin main-shadow($colour) {
+  box-shadow: 0px 1px 6px $colour;
+}
+
+@mixin main-shadow-hover {
+  box-shadow: 0px 2px 8px #363636;
+}
+
+@mixin stepbox-shadow {
+  box-shadow: 0px 5px 8px #dddddd;
+}
+
+@mixin menu-border {
+  border-bottom: 4px solid $colour-tertiary;
+}
