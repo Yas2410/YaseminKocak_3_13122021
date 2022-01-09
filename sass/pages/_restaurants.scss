@@ -1,0 +1,31 @@
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 25px;
+  background-color: $explore-background;
+  h2 {
+    font-size: 22px;
+  }
+  @include desktop {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+  @include tablet {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+.restaurants__desktop {
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,35 @@
+header {
+  text-align: center;
+  h1 {
+    margin: 15px;
+    font-size: 28px;
+  }
+  div {
+    padding: 15px;
+    background-color: #dee1e6;
+  }
+  i {
+    padding-right: 10px;
+  }
+
+  @include desktop {
+    background-color: $header-background;
+    box-shadow: 0px 5px 8px rgb(221, 221, 221);
+    h1 {
+      font-size: 40px;
+      margin: 0;
+      padding: 15px;
+    }
+    div {
+      background-color: $header-background;
+      color: $colour-primary;
+      font-size: 16px;
+      font-weight: bold;
+      font-style: italic;
+      padding: 0 0 15px 0;
+    }
+    i {
+      color: black;
+    }
+  }
+}

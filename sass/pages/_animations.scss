@@ -1,0 +1,159 @@
+/*LOADER*/
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  background-color: #fff;
+  inset: 0;
+  z-index: 1;
+  animation: disappear 1ms 2.2s forwards;
+  transform-origin: top;
+  h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: 55px;
+    color: #4e4e52;
+    @include desktop {
+      font-size: 70px;
+    }
+  }
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.pulse {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  circle {
+    fill: $colour-primary;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: 50% 50%;
+    -webkit-animation: pulse 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+    animation: pulse 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+    &:nth-child(2) {
+      fill: $colour-secondary;
+      -webkit-animation: pulse 1.5s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+      animation: pulse 1.5s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+    }
+    &:nth-child(3) {
+      fill: $colour-tertiary;
+      -webkit-animation: pulse 1.5s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+      animation: pulse 1.5s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+    }
+  }
+}
+
+@keyframes pulse {
+  25% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*FADE IN RESTAURANT MENU*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, -15%, 0);
+  }
+}
+
+.menu__first {
+  animation: fadeIn 1s ease-in both;
+}
+.menu__second {
+  animation: fadeIn 1.5s ease-in both;
+}
+.menu__third {
+  animation: fadeIn 2s ease-in both;
+}
+
+.menu__first,
+.menu__second,
+.menu__third {
+  @include tablet {
+    width: 70%;
+    margin-left: 140px;
+  }
+}
+
+.menu__info {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  &:hover .fa-check-circle {
+    transform: rotate(360deg);
+  }
+  &:hover .menu__checkbox {
+    transform: translateX(0px);
+    transition: 0.5s ease-in-out;
+  }
+  &:hover .menu__info--title,
+  &:hover .menu__info--details {
+    width: calc(100% - 65px);
+    transition: 500ms ease-in-out;
+  }
+}
+
+.menu__checkbox {
+  position: absolute;
+  background-color: $colour-tertiary;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 65px;
+  transform-origin: right 50%;
+  border-radius: 0px 15px 15px 0px;
+  transform: translateX(65px);
+  overflow: hidden;
+  transition-duration: 0.5s;
+  i {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 25px;
+    color: white;
+    opacity: 1;
+    transition: 500ms ease-in-out;
+    transform: rotate(-180deg);
+  }
+}
+
+.menu__info--title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__info--details {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  transform-origin: left 50%;
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

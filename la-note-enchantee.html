@@ -14,9 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="public/css/mobile.css">
-    <link rel="stylesheet" type="text/css" href="public/css/desktop.css">
-    <link rel="stylesheet" type="text/css" href="public/css/tablet.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Ohmyfood! Bienvenue sur le menu du restaurant "La note enchantée"!</title>
 </head>
@@ -24,7 +22,7 @@
 <body>
 
     <header>
-        <div class="backMain">
+        <div class="main__back">
             <a href="index.html">
                 <i class="fas fa-arrow-left"></i>
             </a>
@@ -34,135 +32,135 @@
 
     <main>
         <section>
-            <div class="restoPicture">
+            <div class="restaurant-picture">
                 <img src="public/img/laNoteEnchantee.jpg" alt="Photo d'un plat du restaurant La note enchantée">
             </div>
-            <div class="menuFood">
-                <div class="restoName">
+            <div class="menu">
+                <div class="restaurant-name">
                     <h2>La note enchantée</h2>
-                    <i class="far fa-heart likeOneMenu"></i>
-                    <i class="fas fa-heart likeTwoMenu"></i>
+                    <i class="far fa-heart menu__like--empty"></i>
+                    <i class="fas fa-heart menu__like--full"></i>
                 </div>
-                <div class="menuDesktop">
-                    <div class="appearFirst">
-                        <h2 class="menuSection">ENTRÉES</h2>
-                        <div class="menuInfo">
-                            <h3 class="menuTitle">Ravioles de foie gras</h3>
-                            <div class="menuDetails">
+                <div class="menu__desktop">
+                    <div class="menu__first">
+                        <h2 class="menu__section">ENTRÉES</h2>
+                        <div class="menu__info">
+                            <h3 class="menu__info--title">Ravioles de foie gras</h3>
+                            <div class="menu__info--details">
                                 <p>Accompagnées de leur crème à la truffe</p>
-                                <span class="price">25€</span>
+                                <span class="menu__info--price">25€</span>
                             </div>
-                            <div class="checkbox">
+                            <div class="menu__checkbox">
                                 <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                        <div class="menuInfo">
-                            <h3 class="menuTitle">Caviar osciètre</h3>
-                            <div class="menuDetails">
+                        <div class="menu__info">
+                            <h3 class="menu__info--title">Caviar osciètre</h3>
+                            <div class="menu__info--details">
                                 <p>Sur blini à la farine de blé noir</p>
-                                <span class="price">35€</span>
+                                <span class="menu__info--price">35€</span>
                             </div>
-                            <div class="checkbox">
+                            <div class="menu__checkbox">
                                 <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                        <div class="menuInfo">
-                            <h3 class="menuTitle">Homard et espuma de chou-fleur</h3>
-                            <div class="menuDetails">
+                        <div class="menu__info">
+                            <h3 class="menu__info--title">Homard et espuma de chou-fleur</h3>
+                            <div class="menu__info--details">
                                 <p>Mariné aux zests d'orange</p>
-                                <span class="price">20€</span>
+                                <span class="menu__info--price">20€</span>
                             </div>
-                            <div class="checkbox">
+                            <div class="menu__checkbox">
                                 <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                        <div class="menuInfo menuLast">
-                            <h3 class="menuTitle">Foie gras de canard cuit entier</h3>
-                            <div class="menuDetails">
+                        <div class="menu__info menu__last">
+                            <h3 class="menu__info--title">Foie gras de canard cuit entier</h3>
+                            <div class="menu__info--details">
                                 <p>Confiture de figue et pain toasté</p>
-                                <span class="price">35€</span>
+                                <span class="menu__info--price">35€</span>
                             </div>
-                            <div class="checkbox">
+                            <div class="menu__checkbox">
                                 <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="appearSecond">
-                        <h2 class="menuSection">PLATS</h2>
-                        <div class="menuInfo">
-                            <h3 class="menuTitle">Noix de coquilles Saint-Jacques</h3>
-                            <div class="menuDetails">
+                    <div class="menu__second">
+                        <h2 class="menu__section">PLATS</h2>
+                        <div class="menu__info">
+                            <h3 class="menu__info--title">Noix de coquilles Saint-Jacques</h3>
+                            <div class="menu__info--details">
                                 <p>Sur lit de purée de céleri-rave</p>
-                                <span class="price">40€</span>
+                                <span class="menu__info--price">40€</span>
                             </div>
-                            <div class="checkbox">
+                            <div class="menu__checkbox">
                                 <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                        <div class="menuInfo">
-                            <h3 class="menuTitle">Langoustine poêlée</h3>
-                            <div class="menuDetails">
+                        <div class="menu__info">
+                            <h3 class="menu__info--title">Langoustine poêlée</h3>
+                            <div class="menu__info--details">
                                 <p>Purée de patate douce</p>
-                                <span class="price">35€</span>
+                                <span class="menu__info--price">35€</span>
                             </div>
-                            <div class="checkbox">
+                            <div class="menu__checkbox">
                                 <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                        <div class="menuInfo menuLast">
-                            <h3 class="menuTitle">Mijoté de queue de boeuf</h3>
-                            <div class="menuDetails">
+                        <div class="menu__info menu__last">
+                            <h3 class="menu__info--title">Mijoté de queue de boeuf</h3>
+                            <div class="menu__info--details">
                                 <p>Et riz sauvage aux zests de citron</p>
-                                <span class="price">44€</span>
+                                <span class="menu__info--price">44€</span>
                             </div>
-                            <div class="checkbox">
+                            <div class="menu__checkbox">
                                 <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="appearThird">
-                        <h2 class="menuSection">DESSERTS</h2>
-                        <div class="menuInfo">
-                            <h3 class="menuTitle">Macaron noisette et chocolat</h3>
-                            <div class="menuDetails">
+                    <div class="menu__third">
+                        <h2 class="menu__section">DESSERTS</h2>
+                        <div class="menu__info">
+                            <h3 class="menu__info--title">Macaron noisette et chocolat</h3>
+                            <div class="menu__info--details">
                                 <p>Glace au caramel brun et sel de Guérande</p>
-                                <span class="price">18€</span>
+                                <span class="menu__info--price">18€</span>
                             </div>
-                            <div class="checkbox">
+                            <div class="menu__checkbox">
                                 <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                        <div class="menuInfo">
-                            <h3 class="menuTitle">Baba au rhum revisité</h3>
-                            <div class="menuDetails">
+                        <div class="menu__info">
+                            <h3 class="menu__info--title">Baba au rhum revisité</h3>
+                            <div class="menu__info--details">
                                 <p>Avec son coulis de citron</p>
-                                <span class="price">22€</span>
+                                <span class="menu__info--price">22€</span>
                             </div>
-                            <div class="checkbox">
+                            <div class="menu__checkbox">
                                 <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                        <div class="menuInfo menuLast">
-                            <h3 class="menuTitle">Tarte au citron meringuée</h3>
-                            <div class="menuDetails">
+                        <div class="menu__info menu__last">
+                            <h3 class="menu__info--title">Tarte au citron meringuée</h3>
+                            <div class="menu__info--details">
                                 <p>Destructurée</p>
-                                <span class="price">23€</span>
+                                <span class="menu__info--price">23€</span>
                             </div>
-                            <div class="checkbox">
+                            <div class="menu__checkbox">
                                 <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="order">
-                    <button class="orderBtn">Commander</button>
+                    <button class="btn__order">Commander</button>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footerDesk">
+        <div class="footer__desktop">
             <h4>Ohmyfood</h4>
             <ul>
                 <li>

@@ -1,1 +1,15 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./components/buttons";
 
+@import "./base/base";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/cards";
+
+@import "./pages/explore";
+@import "./pages/running";
+@import "./pages/restaurants";
+@import "./pages/each-restaurant";
+@import "./pages/animations";

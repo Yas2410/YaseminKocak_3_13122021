@@ -1,0 +1,88 @@
+.btn__explore,
+.btn__order {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 100px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  background-image: linear-gradient($colour-secondary, $colour-primary);
+  box-shadow: 0px 1px 6px rgb(129, 129, 129);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(110%);
+    box-shadow: 0px 2px 8px rgb(54, 54, 54);
+  }
+}
+
+.btn__order {
+  margin-bottom: 50px;
+  width: 155px;
+}
+
+.fa-heart {
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.card__like--empty,
+.card__like--full,
+.menu__like--empty,
+.menu__like--full {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.menu__like--empty,
+.menu__like--full {
+  bottom: unset;
+}
+
+.card__like--full,
+.menu__like--full {
+  opacity: 0;
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s linear;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.main__back {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 0;
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      color: black;
+    }
+  }
+  @include tablet {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+}
+
+.fa-arrow-left {
+  font-size: 20px;
+  padding: 0 50px 0 25px;
+  @include desktop {
+    font-size: 30px;
+    color: $colour-primary;
+    transition: transform 0.5s;
+    &:hover {
+      transform: scale(1.2);
+      color: $colour-secondary;
+    }
+  }
+}

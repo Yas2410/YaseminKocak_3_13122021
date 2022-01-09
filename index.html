@@ -14,9 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="public/css/mobile.css">
-    <link rel="stylesheet" type="text/css" href="public/css/desktop.css">
-    <link rel="stylesheet" type="text/css" href="public/css/tablet.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Ohmyfood! Réservez votre menu en quelques clics!</title>
 </head>
@@ -25,7 +23,7 @@
 
     <header>
         <h1>Ohmyfood</h1>
-        <div class="location">
+        <div>
             <i class="fa-solid fa-location-dot"></i>
             <span>Paris, Belleville</span>
         </div>
@@ -33,27 +31,27 @@
 
     <main>
         <section class="explore">
-            <div class="exploreDesk">
+            <div class="explore__desktop">
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <button class="exploreBtn">Explorer nos restaurants</button>
+                <button class="btn__explore">Explorer nos restaurants</button>
             </div>
         </section>
         <section class="running">
             <h2>Fonctionnement</h2>
-            <div class="threeSteps">
+            <div class="running__steps">
                 <div class="step">
-                    <div class="number">1</div>
+                    <div class="step__number">1</div>
                     <i class="fas fa-mobile-alt"></i>
                     <span>Choisissez un restaurant</span>
                 </div>
                 <div class="step">
-                    <div class="number">2</div>
+                    <div class="step__number">2</div>
                     <i class="fa fa-list-ul"></i>
                     <span>Composez votre menu</span>
                 </div>
                 <div class="step">
-                    <div class="number">3</div>
+                    <div class="step__number">3</div>
                     <i class="fas fa-store"></i>
                     <span>Dégustez au restaurant</span>
                 </div>
@@ -62,64 +60,64 @@
         <section>
             <div class="restaurants">
                 <h2>Restaurants</h2>
-                <div class="restaurantDesk">
+                <div class="restaurants__desktop">
                     <div class="card">
                         <a href="la-palette-du-gout.html">
                             <img src="public/img/laPaletteDuGout.jpg"
                                 alt="Photo d'un plat du restaurant La palette du goût, Ménilmontant">
-                            <span class="newTag">Nouveau</span>
-                            <div class="descriptionCard">
+                            <span class="card__new">Nouveau</span>
+                            <div class="card__description">
                                 <div>
                                     <h3>La palette du goût</h3>
                                     <span>Ménilmontant</span>
                                 </div>
                             </div>
                         </a>
-                        <i class="far fa-heart likeOne"></i>
-                        <i class="fas fa-heart likeTwo"></i>
+                        <i class="far fa-heart card__like--empty"></i>
+                        <i class="fas fa-heart card__like--full"></i>
                     </div>
                     <div class="card">
                         <a href="la-note-enchantee.html">
                             <img src="public/img/laNoteEnchantee.jpg"
                                 alt="Photo d'un plat du restaurant La note enchantée, Charonne">
-                            <span class="newTag secondTag">Nouveau</span>
-                            <div class="descriptionCard">
+                            <span class="card__new">Nouveau</span>
+                            <div class="card__description">
                                 <div>
                                     <h3>La note enchantée</h3>
                                     <span>Charonne</span>
                                 </div>
                             </div>
                         </a>
-                        <i class="far fa-heart likeOne"></i>
-                        <i class="fas fa-heart likeTwo"></i>
+                        <i class="far fa-heart card__like--empty"></i>
+                        <i class="fas fa-heart card__like--full"></i>
                     </div>
                     <div class="card">
                         <a href="a-la-francaise.html">
                             <img src="public/img/aLaFrancaise.jpg"
                                 alt="Photo d'un plat du restaurant À la française, Cité Rouge">
-                            <div class="descriptionCard">
+                            <div class="card__description">
                                 <div>
                                     <h3>À la française</h3>
                                     <span>Cité Rouge</span>
                                 </div>
                             </div>
                         </a>
-                        <i class="far fa-heart likeOne"></i>
-                        <i class="fas fa-heart likeTwo"></i>
+                        <i class="far fa-heart card__like--empty"></i>
+                        <i class="fas fa-heart card__like--full"></i>
                     </div>
                     <div class="card">
                         <a href="le-delice-des-sens.html">
                             <img src="public/img/leDeliceDesSens.jpg"
                                 alt="Photo d'un plat du restaurant Le délice des sens, Folie-Méricourt">
-                            <div class="descriptionCard">
+                            <div class="card__description">
                                 <div>
                                     <h3>Le délice des sens</h3>
                                     <span>Folie-Méricourt</span>
                                 </div>
                             </div>
                         </a>
-                        <i class="far fa-heart likeOne"></i>
-                        <i class="fas fa-heart likeTwo"></i>
+                        <i class="far fa-heart card__like--empty"></i>
+                        <i class="fas fa-heart card__like--full"></i>
                     </div>
                 </div>
             </div>
@@ -127,7 +125,7 @@
     </main>
 
     <footer>
-        <div class="footerDesk">
+        <div class="footer__desktop">
             <h4>Ohmyfood</h4>
             <ul>
                 <li>
@@ -154,9 +152,9 @@
         <h1>Ohmyfood !</h1>
         <svg class="pulse" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
-            <circle id="Oval1" cx="512" cy="512" r="512"></circle>
-            <circle id="Oval2" cx="512" cy="512" r="512"></circle>
-            <circle id="Oval3" cx="512" cy="512" r="512"></circle>
+            <circle cx="512" cy="512" r="512"></circle>
+            <circle cx="512" cy="512" r="512"></circle>
+            <circle cx="512" cy="512" r="512"></circle>
         </svg>
     </div>
 
